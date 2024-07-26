@@ -1,0 +1,59 @@
+:root{
+  --primary-font-color: rgb(32, 32, 32);
+  --primary-bg-color: rgb(241, 241, 241);
+  
+}
+.dark_mode{
+    --primary-font-color: rgb(245, 240, 240);
+    --primary-bg-color: rgb(48, 48, 48);
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Jost', sans-serif;
+	list-style: none;
+    list-style-type: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 30px;
+    background-color: var(--primary-bg-color);
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+}
+nav img{
+    height: 30px;
+    width: auto;
+    border-radius: 15px;
+}
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    /* color: var(--primary-font-color); */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-font-color);
+}
+nav i{
+    color: var(--primary-font-color);
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}

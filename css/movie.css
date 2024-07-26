@@ -1,0 +1,174 @@
+.movie h1{
+    color: var(--primary-font-color)
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+}
+
+.search-bar input {
+    width: 20vw;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+.search-bar button {
+    border: solid 1px rgb(197, 197, 197);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 40px;
+}
+
+.movie-item {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    /* max-height: 480px; */
+    transition: all 0.3s ease-in-out;
+}
+
+.movie-item:hover{
+    transform: translateY(-7px);
+}
+
+.movie-item img {
+    width:100%;
+    height: 70%;
+    /* object-fit: cover; */
+}
+
+.movie-item h3 {
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+    background-color: rgb(171, 245, 245);
+    /* max-width: 250px; */
+}
+
+.movie-item p {
+    margin: 5px 0;
+}
+
+.pagination{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+
+.pagination button{
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(216, 234, 250);
+    min-width: 30px;
+    cursor: pointer;
+}
+
+
+/* search gareko bata one specific movie detail */
+.one_movie_detail{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background: rgba(0, 0, 0,0.8);    
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+}
+
+.back_to_search{
+    margin: auto;
+    text-align: end;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.detail_secDiv{
+    display: flex;
+}
+.detail_secDiv img{
+    width: 30%;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.detail_detailsDiv p{
+    margin-bottom: 3px;
+}
+.detail_detailsDiv h2{
+    margin-bottom: 12px;
+}
+.detail_detailsDiv .detail_overview{
+    margin-bottom: 12px;
+}
+
+
+
+/* search gareko lai grid maa dekhauna */
+.back_to_explore{
+    margin: auto;
+    text-align: end;
+    margin-bottom: 10px;
+}
+.movie-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 40px;
+}
+.movie-grid-item {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.movie-grid-item:hover{
+    transform: translateY(-7px);
+}
+
+.movie-grid-item img {
+    width:100%;
+    height: 70%;
+}
+
+.movie-grid-item h3 {
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+    background-color: rgb(171, 245, 245);
+}
+
+.movie-grid-item p {
+    margin: 5px 0;
+}
+

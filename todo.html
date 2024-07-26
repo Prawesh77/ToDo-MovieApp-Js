@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="assets/images/images.png" >
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="todo.html">ToDo App</a></li>
+            <li><a href="movie.html">Movie App</a></li>
+        </ul>
+        <i class='bx bx-toggle-left' id="toggle"></i>
+    </nav>
+
+    <section class="todo">
+        <h1>ToDo Application</h1>
+        <div class="add-div">
+            <input type="text" placeholder="Add to your list" class="todo_input" id="todo_input">
+            <button id="add_todo" class="add_todo">Add</button>
+        </div>
+        <div id="todo_lists" class="todo_lists"> </div>
+    </section>
+
+    <script src="js/todo.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>

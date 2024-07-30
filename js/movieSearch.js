@@ -32,10 +32,6 @@ const handleSearchClick=async()=>{
 const searchedMovieDetail=(movie)=>{
     const movieDetails = document.getElementById('one_movie_detail');
     movieDetails.style.display="block";
-    // const searchDisplay = document.getElementById('movie-details');
-    // searchDisplay.innerHTML = '';
-    const backToExplore = document.getElementById('back_to_explore');
-    backToExplore.innerHTML = '';
 
     if (movie) {
         movieDetails.innerHTML = `

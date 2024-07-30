@@ -22,8 +22,10 @@
     padding: 10px 20px;
     font-size: 16px;
     margin-left: 5px;
+    cursor: pointer;
 }
 
+/* Discover movies ko list(grid) */
 .movie-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -64,6 +66,9 @@
     margin: 5px 0;
 }
 
+
+
+/* pagination wala ko lagi */
 .pagination{
     width: 100%;
     margin-top: 20px;
@@ -84,7 +89,7 @@
 }
 
 
-/* search gareko bata one specific movie detail */
+/*one specific movie detail */
 .one_movie_detail{
     position: fixed;
     top: 0;

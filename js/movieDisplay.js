@@ -48,6 +48,7 @@ const displayMovies=(movies)=>{
     movies.forEach(movie => {
         const movieDiv = document.createElement('div');
         movieDiv.classList.add('movie-item');
+        movieDiv.addEventListener("click",()=>movieDetail(movie));
         movieDiv.innerHTML = `
             <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}">
             <h3>${movie.original_title}</h3>
@@ -75,6 +76,27 @@ const displayMovies=(movies)=>{
       button3.addEventListener("click", ()=>handlePageClick(page+1));
       paginationDiv.appendChild(button3);
 }
+
+const movieDetail=(movie)=>{
+  const movieDetails = document.getElementById('one_movie_detail');
+  movieDetails.style.display="block";
+      movieDetails.innerHTML = `
+          <p class="back_to_search" onclick="clearSearchedMovieDetail()"> Back to Discover</p>
+          <div class="detail_secDiv">
+              <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}">
+              <div class="detail_detailsDiv">
+                  <h2>${movie.title}</h2>
+                  <p class="detail_overview">${movie.overview}</p>
+                  <p><b>Rating:</b> ${movie.vote_average}</p>
+                  <p><b>Release Date:</b> ${movie.release_date}</p>
+              </div>  
+          </div>      
+      `; 
+
+}
+
+
+
 
 const handlePageClick=(pg)=>{
   page= pg;
